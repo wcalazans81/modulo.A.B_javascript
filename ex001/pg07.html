@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        
+        p {
+            text-align: justify;
+        
+        }
+        div#area {
+            font: normal 1.2em Arial;
+            background-color: rgb(193, 243, 226);
+            color: blue;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Eventos DOM</h1>
+    <h2>Eventos diparados pelo mouse</h2>
+    <p>Eventos de mouse mouseenter quando o mouse entar no elemento selecionado,<br> mousemove quando o mouse passea pelo elemento, mousedown quando o mouse é permanece clicado e quando solta-se o Clique mouseup,<br> também o Evento de Clique e ao mover o mouse para fora do elemento dispara a função mouseout</p>
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+        Iteraja...
+    </div>
+    <p><a href="ex001.html" rel="prev" target="_self">voltar</a></p>
+    <script>
+        var a = window.document.getElementById('area')
+        
+        function clicar() {
+            
+            a.innerText = 'Clicou!!!'
+            a.style.background = 'red'
+        }
+
+        function entrar() {
+            a.innerText = 'Entrou!!!'
+        }
+
+        function sair() {
+            a.innerText = 'Saiu!!!'
+            a.style.background = 'green'
+        }
+    </script>
+
+</body>
+</html>
