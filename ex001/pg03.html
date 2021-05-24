@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variavel</title>
+</head>
+<body>
+    <h1>Tipos de variáveis Number.parseInt e Number.parseFloat</h1>
+    <h2>Formatação de Moedas</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, autem. Animi perspiciatis asperiores qui alias, hic accusamus, non nesciunt laborum libero deleniti consectetur sed eaque reiciendis, sunt ipsum atque? Rem?</p>
+    <p><a href="ex001.html" rel="prev" target="_self">Voltar</a></p>
+    <script>
+        var n1 = Number.parseInt(window.prompt('Digite um número: '))
+        var n2 = Number.parseFloat(window.prompt('Digite outro número: ')) 
+        var s = (n1 + n2) / 2
+        window.alert('A soma dos valores dividido por 2 é = ' + s)
+        // (numbur + numbur) para adição
+        // (string + string) para concatenação
+        var n1 = Number(window.prompt('Digite um número: '))
+        var n2 = Number(window.prompt('Digite outro número: ')) 
+        var s = (n1 + n2) / 2
+        var s2 = n1 * n2
+        window.alert(`A soma dos valores dividido por 2 entre ${n1} + ${n2} / 2 = ${s} `)
+        document.write(`A multiplicação dos valores entre ${n1} x ${n2} = ${s2.toFixed(2)}</br>`)
+        document.write(`A multiplicação dos valores entre ${n1} x ${n2} = ${s2.toFixed(2).replace('.', ',')}</br>`)
+        document.write(`A multiplicação dos valores entre ${n1} x ${n2} = ${s2.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})}</br>`)
+        document.write(`A multiplicação dos valores entre ${n1} x ${n2} = ${s2.toLocaleString('pt-br', {style: 'currency', currency: 'USD'})}</br>`)
+        document.write(`A multiplicação dos valores entre ${n1} x ${n2} = ${s2.toLocaleString('pt-br', {style: 'currency', currency: 'EUR'})}`)
+    </script>
+</body>
+</html>

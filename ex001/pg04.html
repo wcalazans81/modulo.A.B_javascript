@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variáveis</title>
+</head>
+<body>
+    <h1>Tipos de variavel</h1>
+    <h2>Formatação de STRINGS</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aliquid incidunt ad? Assumenda inventore dicta iste aperiam exercitationem repellat minima consequatur. Blanditiis, velit voluptatum? Quasi officiis distinctio similique minima tenetur?</p>
+    <p><a href="ex001.html" rel="prev" target="_self">Voltar</a></p>
+    <script>
+        var nome = window.prompt('Qual é seu nome?')
+        document.write(`Olá ${nome}, seu nome tem ${nome.length} letras. </br>`)
+        document.write(`Olá <strong>${nome}</strong>, seu nome em maiúsculas e ${nome.toUpperCase()}. </br>`)
+        document.write(`Olá ${nome}, seu nome em minúsculas e ${nome.toLocaleLowerCase()}.`)
+    </script>
+</body>
+</html>
